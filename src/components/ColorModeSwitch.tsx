@@ -8,7 +8,7 @@ export default function ColorModeSwitch(props: ColorModeSwitchProps) {
 		<>
 			<HStack>
 				<Switch
-					colorScheme="red"
+					colorScheme="blue"
 					isChecked={colorMode === "dark"}
 					onChange={toggleColorMode}
 				/>
