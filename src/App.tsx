@@ -4,25 +4,27 @@ import GameGrid from "./components/GameGrid";
 
 function App() {
 	return (
-		<Grid
-			templateAreas={{
-				base: `"nav" "main"`,
-				lg: `"nav nav" "aside main"`,
-			}}
-		>
-			<GridItem area="nav">
-				<NavBar />
-			</GridItem>
-			<Show above="lg">
-				<GridItem area="aside" bg="gold">
-					Aside
+		<>
+			<Grid
+				templateAreas={{
+					base: `"nav" "main"`,
+					lg: `"nav nav" "aside main"`,
+				}}
+			>
+				<GridItem area="nav">
+					<NavBar />
 				</GridItem>
-			</Show>
+				<Show above="lg">
+					<GridItem area="aside" bg="goldenrod">
+						Aside
+					</GridItem>
+				</Show>
 
-			<GridItem area="main">
-				<GameGrid />
-			</GridItem>
-		</Grid>
+				<GridItem area="main">
+					<GameGrid />
+				</GridItem>
+			</Grid>
+		</>
 	);
 }
 
