@@ -4,8 +4,7 @@ import GameCard from "./GameCard";
 import GameCardSkeleton from "./GameCardSkeleton";
 import GameCardContainer from "./GameCardContainer";
 
-interface GameGridProps {}
-export default function GameGrid(props: GameGridProps) {
+export default function GameGrid() {
 	const { data, error, isLoading } = useGames();
 	const skeletons = [1, 2, 3, 4, 5, 6];
 
@@ -20,7 +19,7 @@ export default function GameGrid(props: GameGridProps) {
 					xl: 5,
 				}}
 				padding="10px"
-				spacing={10}
+				spacing={3}
 			>
 				{isLoading &&
 					skeletons.map((skeleton) => (
