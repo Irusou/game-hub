@@ -12,7 +12,7 @@ export default function ColorModeSwitch(props: ColorModeSwitchProps) {
 					isChecked={colorMode === "dark"}
 					onChange={toggleColorMode}
 				/>
-				<Text>Dark Mode</Text>
+				<Text whiteSpace="nowrap">Dark Mode</Text>
 			</HStack>
 		</>
 	);
