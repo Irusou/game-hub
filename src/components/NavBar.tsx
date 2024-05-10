@@ -7,7 +7,7 @@ export default function NavBar(props: NavBarProps) {
 	return (
 		<>
 			<HStack justifyContent="space-between" padding="10px">
-				<Image src={logo} boxSize="60px" rounded={30} />
+				<Image src={logo} boxSize="60px" borderRadius="8px" />
 				<ColorModeSwitch />
 			</HStack>
 		</>
